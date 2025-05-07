@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+
+<!-- Cloack Of Time-->
+<div class="flex flex-col justify-center items-center font-calsans p-3 bg-emerald-50 ">
+    <div class="md:text-5xl text-2xl p-2 pt-5 pb-5">
+        <H1>BERNABUE SOCCER CLUB</H1>
+    </div>
+    <div class="flex flex-col justify-center items-center border-4 p-5 bg-gray-200 md:text-8xl text-7xl text-emerald-700 shadow-lg">
+        <span>{{time}}</span>
+    </div>
+</div>
+
+<div class="flex flex-row justify-between items-center w-full">
+    <div class="flex flex-col w-60 p-5 pl-10">
+        <h2 class="text-3xl p-2">
+           Horarios Disponibles 
+        </h2>
+        <button class="bg-emerald-700 text-white rounded-xl">
+            Reservar
+        </button>
+    </div>
+
+    <div class="flex justify-center items-center w-full ">
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Generar filas de 8:00 AM a 11:00 PM -->
+              <!-- Puedes automatizar esto en Angular, pero aquí va manual para HTML plano -->
+              <tr><td>08:00 AM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>09:00 AM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>10:00 AM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>11:00 AM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>12:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>01:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>02:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>03:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>04:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>05:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>06:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>07:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>08:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>09:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>10:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>11:00 PM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+    </div>
+
+
+</div>

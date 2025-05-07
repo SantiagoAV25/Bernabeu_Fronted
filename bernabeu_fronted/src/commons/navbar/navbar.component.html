@@ -1,0 +1,32 @@
+<!-- NAVBAR -->
+<nav class="flex w-full h-24 items-center md:justify-center justify-between px-4 bg-white shadow-md font-calsans ">
+    <!-- Logo -->
+    <div class="h-20 w-20 p-2">
+      <img class="rounded-xl" src="assets/images/Bernabeu_Logo.png" alt="Logo">
+    </div>
+  
+    <!-- Botón hamburguesa (solo visible en móviles) -->
+    <button class="md:hidden text-blue-800" (click)="menuOpen = !menuOpen">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  
+    <!-- Navbar horizontal (solo visible en pantallas medianas o más grandes) -->
+    <ul class="hidden md:flex flex-row justify-center items-center text-blue-800 gap-6">
+      <li><a href="#">Ubicación</a></li>
+      <li><a href="#">Reservas</a></li>
+      <li><a href="#">Horarios</a></li>
+      <li><a href="#">Tiempo Faltante</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Menú vertical desplegable solo visible en móviles cuando se abre -->
+  <div *ngIf="menuOpen" class="flex flex-col bg-white text-blue-800 shadow-md md:hidden p-4 space-y-2">
+    <a href="#">Ubicación</a>
+    <a href="#">Reservas</a>
+    <a href="#">Horarios</a>
+    <a href="#">Tiempo Faltante</a>
+  </div>
+  
